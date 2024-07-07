@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Carga de fuentes-->
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/fonts/montserrat/montserra.css" />
+
+    <!--Carga de estilos-->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <title>Antártika</title>
+  </head>
+
+  <body>
+    <!--Barra superior decorativa-->
+    <div class="decoration-bar"></div>
+
+    <!--Layout principal-->
+    <div class="layout">
+      <!--Cabecera-->
+      <header class="layout__header">
+        <div class="header__title">
+          <a href="#" class="header__link">
+            <img class="header__img" src="./assets/img/logo4.jpg" alt="logo" />
+          </a>
+        </div>
+      </header>
+
+      <!--Navegacion-->
+      <section class="layout__nav">
+        <nav class="nav__navbar">
+          <!--Botón menú responsive-->
+          <div class="navbar__mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!--Menú responsive-->
+          <ul class="navbar__mobile-list">
+            <!--Elemento con submenu-->
+            <li class="mobile-list__item">
+              <div class="mobile-list__container">
+                <a href="#" class="mobile-list__link">Noticias</a>
+                <div class="mobile-list__icon" id="icon1">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <ul class="mobile-list__m-submenu" id="submenu1">
+                <li class="m-submenu__item">
+                  <a href="#" class="m-submenu__link">Meteorología</a>
+                </li>
+                <li class="m-submenu__item">
+                  <a href="#" class="m-submenu__link">Novedades</a>
+                </li>
+                <li class="m-submenu__item">
+                  <a href="#" class="m-submenu__link">Otros</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-list__item">
+              <a href="#" class="mobile-list__link">Seguridad</a>
+            </li>
+            <li class="mobile-list__item">
+              <a href="#" class="mobile-list__link">Visores</a>
+            </li>
+            <li class="mobile-list__item">
+              <a href="#" class="mobile-list__link">Rutas</a>
+            </li>
+          </ul>
+          <!--Navegación de escritorio-->
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Noticias</a>
+              <div class="navbar__submenu">
+                <!--Una lista desplegable-->
+                <ul class="navbar__sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Meteorología</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Novedades</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Otros</a>
+                    <ul class="sublist__dropdown">
+                      <li class="dropdown__item">
+                        <a class="dropdwon__link" href="">Escalada</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a class="dropdwon__link" href="">Alpinismo</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <!--Carrusel imágenes-->
+                <div class="submenu__carrusel">
+                  <ul class="carrusel__menu carrusel__menu--small">
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/alpinismo.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">La cordada</a>
+                        </h3>
+                      </div>
+                    </li>
+
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/sol.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Refugios</a>
+                        </h3>
+                      </div>
+                    </li>
+
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/alpinismo3.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Glaciares</a>
+                        </h3>
+                      </div>
+                    </li>
+
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/alpinismo4.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Montañas</a>
+                        </h3>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Seguridad</a>
+              <div class="navbar__submenu navbar__submenu--small">
+                <ul class="navbar__sublist">
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link">Formación</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link">Lecturas</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar__submenu">
+                <div class="submenu__carrusel">
+                  <ul class="carrusel__menu">
+                    <!--Elemento del carrusel-->
+                    <li class="carrusel__item">
+                      <div class="carrusel__container__img">
+                        <img
+                          src="./assets/img/14.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Montañas</a>
+                        </h3>
+                      </div>
+                    </li>
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/pano.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Glaciares</a>
+                        </h3>
+                      </div>
+                    </li>
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/placa.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Aludes</a>
+                        </h3>
+                      </div>
+                    </li>
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/avalancha_.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Formación</a>
+                        </h3>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Visores</a>
+              <div class="navbar__submenu">
+                <div class="submenu__carrusel">
+                  <ul class="carrusel__menu">
+                    <!--Elemento del carrusel-->
+                    <li class="carrusel__item">
+                      <div class="carrusel__container__img">
+                        <img
+                          src="./assets/img/rutas.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Rutas</a>
+                        </h3>
+                      </div>
+                    </li>
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/glaciares2.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">Glaciares</a>
+                        </h3>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Rutas</a>
+              <div class="navbar__submenu">
+                <div class="submenu__carrusel">
+                  <ul class="carrusel__menu">
+                    <!--Elemento del carrusel-->
+                    <li class="carrusel__item">
+                      <div class="carrusel__container__img">
+                        <img
+                          src="./assets/img/1.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link"
+                            >Norte del Monte Perdido</a
+                          >
+                        </h3>
+                      </div>
+                    </li>
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/2.png"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link"
+                            >Aneto por Estassen</a
+                          >
+                        </h3>
+                      </div>
+                    </li>
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/3.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link">NE al Bisaurín</a>
+                        </h3>
+                      </div>
+                    </li>
+                    <li class="carrusel__item">
+                      <div class="carrusel__container-img">
+                        <img
+                          src="./assets/img/4.jpg"
+                          alt="primera imagen"
+                          class="carrusel__img"
+                        />
+                      </div>
+
+                      <div class="carrusel__detail">
+                        <h3 class="carrusel__title">
+                          <a href="#" class="carrusel__link"
+                            >Peña telera, gran diagonal</a
+                          >
+                        </h3>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Contacto</a>
+            </li>
+          </ul>
+
+          <!--Buscador-->
+          <form action="" class="navbar__search">
+            <input
+              type="text"
+              class="search__input"
+              name="search"
+              placeholder="Buscar"
+            />
+            <div class="navbar__btn-search">
+              <a href="#" class="navbar__button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </form>
+        </nav>
+      </section>
+
+      <!--Marquesina-->
+      <section class="layout__marquee">
+        <h3 class="marquee__header">No te lo pierdas</h3>
+        <div class="marquee__container">
+          <ul class="marquee__list">
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Analizando accidentes</a>
+              </h4>
+            </li>
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Material</a>
+              </h4>
+            </li>
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Formación</a>
+              </h4>
+            </li>
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Viajes</a>
+              </h4>
+            </li>
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Charlas</a>
+              </h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Slider-->
+      <section class="layout__slider">
+        <div class="slider__container slider__container--1">
+          <a href="#" class="slider__link">
+            <img
+              src="./assets/img/8.jpg"
+              alt="foto fantasia 1"
+              class="slider__img"
+            />
+          </a>
+          <div class="slider__info">
+            <p class="slider__text">La montaña es un maestro</p>
+          </div>
+        </div>
+        <div class="slider__container slider__container--2">
+          <a href="#" class="slider__link">
+            <img
+              src="./assets/img/13.jpg"
+              alt="foto fantasia 2"
+              class="slider__img"
+            />
+          </a>
+          <div class="slider__info">
+            <p class="slider__text">El alpinismo es una metáfora de la vida</p>
+          </div>
+        </div>
+        <div class="slider__container slider__container--3">
+          <a href="#" class="slider__link">
+            <img
+              src="./assets/img/12.jpg"
+              alt="foto fantasia 3"
+              class="slider__img slider__img--3"
+            />
+          </a>
+          <div class="slider__info">
+            <p class="slider__text">
+              Escalar una montaña es como tocar el cielo
+            </p>
+          </div>
+        </div>
+        <div class="slider__container slider__container--4">
+          <a href="#" class="slider__link">
+            <img
+              src="./assets/img/9.jpg"
+              alt="foto fantasia 4"
+              class="slider__img"
+            />
+          </a>
+          <div class="slider__info">
+            <p class="slider__text">Las montañas son el alma del mundo</p>
+          </div>
+        </div>
+        <div class="slider__container slider__container--5">
+          <a href="#" class="slider__link">
+            <img
+              src="./assets/img/18.jpg"
+              alt="foto fantasia 5"
+              class="slider__img"
+            />
+          </a>
+          <div class="slider__info">
+            <p class="slider__text">
+              La aventura es lo que da sentido a la vida
+            </p>
+          </div>
+        </div>
+        <div class="slider__container slider__container--6">
+          <a href="#" class="slider__link">
+            <img
+              src="./assets/img/22.jpg"
+              alt="foto fantasia 5"
+              class="slider__img"
+            />
+          </a>
+          <div class="slider__info">
+            <p class="slider__text">El único límite es tu mente</p>
+          </div>
+        </div>
+        <div class="slider__container slider__container--7">
+          <a href="#" class="slider__link">
+            <img
+              src="./assets/img/21.jpg"
+              alt="foto fantasia 5"
+              class="slider__img"
+            />
+          </a>
+          <div class="slider__info">
+            <p class="slider__text">
+              Las montañas no se conquistan, se respetan
+            </p>
+          </div>
+        </div>
+        <div class="slider__container slider__container--8">
+          <a href="#" class="slider__link">
+            <img
+              src="./assets/img/23.jpg"
+              alt="foto fantasia 5"
+              class="slider__img"
+            />
+          </a>
+          <div class="slider__info">
+            <p class="slider__text">El riesgo es parte de la vida</p>
+          </div>
+        </div>
+      </section>
+
+      <!--Mejores actividades-->
+      <section class="layout__highlights">
+        <header class="highlights__subheader">
+          <h3 class="subheader__title">Mejores películas y documentales</h3>
+        </header>
+        <div class="highlights__posts">
+          <article class="highlights__post highlights__post--1">
+            <div class="highlights__image">
+              <a
+                href="
+              "
+                class="highlights__image-link"
+              >
+                <img src="./assets/img/Meru.jpg" class="highlights__img" alt=""
+              /></a>
+              <div class="highlights__category">
+                <a href="#" class="highlights__name-category"></a>
+              </div>
+            </div>
+
+            <div class="highlights__detail">
+              <h3 class="highlights__title">
+                <a
+                  href="https://www.youtube.com/watch?v=ntGACcKOCNA"
+                  class="highlights__link"
+                  target="_blank"
+                  >Meru, la aleta de tiburón</a
+                >
+              </h3>
+              <div class="highlights__meta">
+                <a href="#" class="highlights__author">Andrés Martín</a>
+                <span class="highlights__date">24/06/2024</span>
+              </div>
+              <p class="highlights__description">
+                Tres escaladores de élite tratan de encontrar su camino a través
+                de la obsesión y la pérdida en su intento de escalar el monte
+                Meru a través de la pared conocida como Aleta de Tiburón, uno de
+                los grandes retos de los alpinistas.
+              </p>
+              <footer class="highlights__footer-post">
+                <div class="footer-post__container">
+                  <div class="footer-post__views">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>2589</span>
+                  </div>
+                  <div class="footer-post__comments">
+                    <i class="fa-solid fa-comment"></i>
+                    <a href="#" class="comments__number">21</a>
+                  </div>
+                </div>
+                <div class="footer-post__read-more">
+                  <a href="#" class="read-more__btn">Leer más</a>
+                </div>
+              </footer>
+            </div>
+          </article>
+
+          <article class="highlights__post highlights__post--2">
+            <div class="highlights__image">
+              <a
+                href="
+              "
+                class="highlights__image-link"
+              >
+                <img
+                  src="./assets/img/alpinist.jpg"
+                  class="highlights__img"
+                  alt=""
+              /></a>
+              <div class="highlights__category">
+                <a href="#" class="highlights__name-category"></a>
+              </div>
+            </div>
+
+            <div class="highlights__detail">
+              <h3 class="highlights__title">
+                <a
+                  href="https://www.youtube.com/watch?v=dV0p9jzvXlc"
+                  class="highlights__link"
+                  target="_blank"
+                  >The Alpinist</a
+                >
+              </h3>
+              <div class="highlights__meta">
+                <a href="#" class="highlights__author">Andrés Martín</a>
+                <span class="highlights__date">24/06/2024</span>
+              </div>
+              <p class="highlights__description">
+                Marc-André Leclerc escala solo, lejos de los focos. En lugares
+                alpinos remotos, el joven espíritu libre canadiense de 23 años
+                lleva a cabo algunos de los ascensos en solitario más atrevidos
+                de la historia. Aun así, apenas llama la atención. Sin cámaras,
+                sin cuerdas y sin margen para el error, el enfoque de Leclerc es
+                la esencia de la aventura en solitario.
+              </p>
+              <footer class="highlights__footer-post">
+                <div class="footer-post__container">
+                  <div class="footer-post__views">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>4258</span>
+                  </div>
+                  <div class="footer-post__comments">
+                    <i class="fa-solid fa-comment"></i>
+                    <a href="#" class="comments__number">39</a>
+                  </div>
+                </div>
+                <div class="footer-post__read-more">
+                  <a href="#" class="read-more__btn">Leer más</a>
+                </div>
+              </footer>
+            </div>
+          </article>
+
+          <article class="highlights__post highlights__post--3">
+            <div class="highlights__image">
+              <a
+                href="
+              "
+                class="highlights__image-link"
+              >
+                <img
+                  src="./assets/img/au_dela_des_cimes-694877878-large.jpg"
+                  class="highlights__img"
+                  alt=""
+              /></a>
+              <div class="highlights__category">
+                <a href="#" class="highlights__name-category"></a>
+              </div>
+            </div>
+
+            <div class="highlights__detail">
+              <h3 class="highlights__title">
+                <a
+                  href="https://www.rinconcinefilo.com/mas-alla-de-las-cimas-subtitulos-espanol-descargaronline/"
+                  class="highlights__link"
+                  target="_blank"
+                  >Más allá de las cimas</a
+                >
+              </h3>
+              <div class="highlights__meta">
+                <a href="#" class="highlights__author">Andrés Martín</a>
+                <span class="highlights__date">24/06/2024</span>
+              </div>
+              <p class="highlights__description">
+                "Más allá de las cimas" es un documental sobre la alpinista
+                francesa Catherine Destivelle, en el que nos transmite su
+                sentimiento por las montañas y su especial forma de vivirlas.
+              </p>
+              <footer class="highlights__footer-post">
+                <div class="footer-post__container">
+                  <div class="footer-post__views">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>1168</span>
+                  </div>
+                  <div class="footer-post__comments">
+                    <i class="fa-solid fa-comment"></i>
+                    <a href="#" class="comments__number">9</a>
+                  </div>
+                </div>
+                <div class="footer-post__read-more">
+                  <a href="#" class="read-more__btn">Leer más</a>
+                </div>
+              </footer>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--Videos-->
+      <section class="layout__videos">
+        <header class="videos__subheader">
+          <h3 class="subheader__title">Vídeos</h3>
+        </header>
+        <div class="videos__container">
+          <div class="videos__main-video-container">
+            <div class="videos__main-video">
+              <div class="main-video__yt-video">
+                <iframe
+                  src="https://www.youtube.com/embed/cHpo4V5No0A?si=6kJOQaYIQFxilZlG"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="main-video__detail">
+                <h3 class="main-video__title">Dhaulagiri</h3>
+                <div class="main-video__info">
+                  <div class="main-video__info-container">
+                    <a href="#" class="main-video__author">Eddie Bauer</a>
+                    <div class="main-video__views">
+                      <i class="fa-solid fa-eye"></i>
+                      <span class="main-video__number">1.2M</span>
+                    </div>
+                    <div class="main-video__comments">
+                      <i class="fa-solid fa-comment"></i>
+                      <a href="#" class="main-video__number">559</a>
+                    </div>
+                  </div>
+                  <span class="main-video__date">Junio, 2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="videos__main-video">
+              <div class="main-video__yt-video">
+                <iframe
+                  src="https://www.youtube.com/embed/knxL3pPf1Gs?si=wSgoyXR7fASWe1z_"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="main-video__detail">
+                <h3 class="main-video__title">Swissway to Heaven</h3>
+                <div class="main-video__info">
+                  <div class="main-video__info-container">
+                    <a href="#" class="main-video__author">Petzl Sport</a>
+                    <div class="main-video__views">
+                      <i class="fa-solid fa-eye"></i>
+                      <span class="main-video__number">853K</span>
+                    </div>
+                    <div class="main-video__comments">
+                      <i class="fa-solid fa-comment"></i>
+                      <a href="#" class="main-video__number">364</a>
+                    </div>
+                  </div>
+                  <span class="main-video__date">Junio, 2022</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos__list">
+            <article class="videos__video">
+              <div class="video__detail">
+                <h4 class="video__title">
+                  <a href="#" class="video__link">
+                    Lhotse ft. Hilaree Nelson and Jim Morrison
+                  </a>
+                </h4>
+                <div class="video__info">
+                  <a
+                    href="https://www.youtube.com/@TheNorthFace"
+                    class="video__author"
+                    >The North Face</a
+                  >
+                  <span class="video__date">Febrero, 15 2020</span>
+                </div>
+              </div>
+              <div class="video__image">
+                <a href="#" class="video__image-link"></a>
+                <iframe
+                  src="https://www.youtube.com/embed/wPXSFVruIHI?si=fJn5LX7tTGiwHmS9"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+
+            <article class="videos__video">
+              <div class="video__detail">
+                <h4 class="video__title">
+                  <a href="#" class="video__link">
+                    Petzl RocTrip Argentina 2012
+                  </a>
+                </h4>
+                <div class="video__info">
+                  <a
+                    href="https://www.youtube.com/@PetzlSportVideos"
+                    class="video__author"
+                    >Petzl</a
+                  >
+                  <span class="video__date">Abril, 15 2014</span>
+                </div>
+              </div>
+              <div class="video__image">
+                <a href="#" class="video__image-link"></a>
+                <iframe
+                  src="https://www.youtube.com/embed/QllWNEGBKic?si=VPZwW4SJvFX8wlA1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+
+            <article class="videos__video">
+              <div class="video__detail">
+                <h4 class="video__title">
+                  <a href="#" class="video__link">
+                    Rotpunkt | Alex Megos and the Advent, <br />
+                    the Agony and the Art of the Redpoint
+                  </a>
+                </h4>
+                <div class="video__info">
+                  <a
+                    href="https://www.youtube.com/@patagonia"
+                    class="video__author"
+                    >Patagonia</a
+                  >
+                  <span class="video__date">Junio, 5 2020</span>
+                </div>
+              </div>
+              <div class="video__image">
+                <a href="#" class="video__image-link"></a>
+                <iframe
+                  src="https://www.youtube.com/embed/SbWvFjUIt5k?si=vL1j-m4AoQYgyAMw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+
+            <article class="videos__video">
+              <div class="video__detail">
+                <h4 class="video__title">
+                  <a
+                    href="https://www.youtube.com/watch?v=zpAdJxwOZjU&t=1366s"
+                    class="video__link"
+                  >
+                    Gastronomic Big Wall Climbing in <br />
+                    Patagonia
+                  </a>
+                </h4>
+                <div class="video__info">
+                  <a
+                    href="https://www.youtube.com/@patagonia"
+                    class="video__author"
+                    >Tyler Karow</a
+                  >
+                  <span class="video__date">Agosto, 5 2023</span>
+                </div>
+              </div>
+              <div class="video__image">
+                <a href="#" class="video__image-link"></a>
+                <iframe
+                  src="https://www.youtube.com/embed/zpAdJxwOZjU?si=IWF0UQxaBoQZE9Eu"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+            <article class="videos__video">
+              <div class="video__detail">
+                <h4 class="video__title">
+                  <a
+                    href="https://youtu.be/HQdaDbA-wJI?si=0m_xFoigeBPN72bU"
+                    class="video__link"
+                  >
+                    Arc'teryx Presents: On The Verge
+                  </a>
+                </h4>
+                <div class="video__info">
+                  <a
+                    href="https://www.youtube.com/@arcteryx"
+                    class="video__author"
+                    >Arc'teryx</a
+                  >
+                  <span class="video__date">Agosto 2020</span>
+                </div>
+              </div>
+              <div class="video__image">
+                <a href="#" class="video__image-link"></a>
+                <iframe
+                  src="https://www.youtube.com/embed/HQdaDbA-wJI?si=BNWGNUAWq0mX8D8q"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--Montañas mas bonitas-->
+      <section class="layout__mountain">
+        <div class="mountain__list">
+          <article class="mountain__card">
+            <h3 class="card__title">Alpamayo</h3>
+            <img
+              src="./assets/img/Alpamayo.jpg"
+              alt="foto alpamayo"
+              class="card__img"
+            />
+          </article>
+          <article class="mountain__card">
+            <h3 class="card__title">Laila Peak</h3>
+            <img
+              src="./assets/img/Laila_Peak.jpg"
+              alt="foto laila"
+              class="card__img"
+            />
+          </article>
+          <article class="mountain__card">
+            <h3 class="card__title">Everest</h3>
+            <img
+              src="./assets/img/everest.jpg"
+              alt="foto denali"
+              class="card__img"
+            />
+          </article>
+        </div>
+        <div class="mountain__list">
+          <article class="mountain__card">
+            <h3 class="card__title">Artesonraju</h3>
+            <img
+              src="./assets/img/artesonraju.jpg"
+              alt="foto alpamayo"
+              class="card__img"
+            />
+          </article>
+          <article class="mountain__card">
+            <h3 class="card__title">Lothse</h3>
+            <img
+              src="./assets/img/lothse.jpg"
+              alt="foto laila"
+              class="card__img"
+            />
+          </article>
+          <article class="mountain__card">
+            <h3 class="card__title">Cervino</h3>
+            <img
+              src="./assets/img/cervino_home.jpg"
+              alt="foto denali"
+              class="card__img"
+            />
+          </article>
+        </div>
+        <div class="mountain__list">
+          <article class="mountain__card">
+            <h3 class="card__title">K2</h3>
+            <img
+              src="./assets/img/k2_mountain.jpg"
+              alt="foto alpamayo"
+              class="card__img"
+            />
+          </article>
+          <article class="mountain__card">
+            <h3 class="card__title">Chopicalqui</h3>
+            <img
+              src="./assets/img/Chopicalqui2013.jpg"
+              alt="foto laila"
+              class="card__img"
+            />
+          </article>
+          <article class="mountain__card">
+            <h3 class="card__title">Cerro Torre</h3>
+            <img
+              src="./assets/img/Cerro_torre_1987.jpg"
+              alt="foto denali"
+              class="card__img"
+            />
+          </article>
+        </div>
+        <div class="mountain__list">
+          <article class="mountain__card">
+            <h3 class="card__title">Aconcagua</h3>
+            <img
+              src="./assets/img/aconcagua.jpg"
+              alt="foto alpamayo"
+              class="card__img"
+            />
+          </article>
+
+          <article class="mountain__card">
+            <h3 class="card__title">Ama Dablam</h3>
+            <img
+              src="./assets/img/amadablam.jpg"
+              alt="foto denali"
+              class="card__img"
+            />
+          </article>
+        </div>
+        <div class="mountain__list">
+          <article class="mountain__card">
+            <h3 class="card__title">Denali</h3>
+            <img
+              src="./assets/img/denali.jpg"
+              alt="foto alpamayo"
+              class="card__img"
+            />
+          </article>
+        </div>
+        <div class="mountain__list">
+          <article class="mountain__card">
+            <h3 class="card__title">Monte Perdido</h3>
+            <img
+              src="./assets/img/perdido.jpg"
+              alt="foto alpamayo"
+              class="card__img"
+            />
+          </article>
+
+          <article class="mountain__card">
+            <h3 class="card__title">Alcazaba</h3>
+            <img
+              src="./assets/img/alcazaba_1.jpg"
+              alt="foto denali"
+              class="card__img"
+            />
+          </article>
+        </div>
+      </section>
+
+      <!--Contenido principal-->
+      <section class="layout__main">
+        <!--Sección de noticias-->
+        <section class="main__news">
+          <header class="news__subheader">
+            <h3 class="news__title">Noticias</h3>
+          </header>
+          <div class="news__posts">
+            <article class="news__main-post">
+              <div class="main-post__image">
+                <img
+                  class="main-post__img"
+                  src="./assets/img/garrapatas3.jpg"
+                  alt="noticia principal imagen"
+                />
+              </div>
+              <div class="main-post__info">
+                <h3 class="main-post__title">
+                  <a
+                    href="https://www.desnivel.com/cultura/la-enfermedad-de-lyme-riesgo-y-consejos-para-su-prevencion/"
+                    class="main-post__link-title"
+                    target="_blank"
+                    >Cuidado con las garrapatas en el monte. <br />
+                    La enfermedad de Lyme: riesgo y consejos para su
+                    prevención</a
+                  >
+                </h3>
+                <div class="main-post__meta">
+                  <div class="main-post__container-autor">
+                    <a
+                      href="https://www.desnivel.com/"
+                      class="main-post__author"
+                      target="_blank"
+                      >Desnivel</a
+                    >
+                  </div>
+                  <span class="main-post__date">Julio 2024</span>
+                </div>
+                <p class="main-post__description">
+                  Lyme es una infección bacteriana que se transmite
+                  principalmente a través de la picadura de garrapatas
+                  infectadas, que suelen encontrarse en áreas de monte con
+                  vegetación, como las zonas de escalada que solemos frecuentar.
+                  Exponemos en este artículo sus riesgos y consejos para
+                  evitarlo, así como casos reales de escaladores.
+                </p>
+                <div class="main-post__footer-info">
+                  <div class="footer-info__container">
+                    <div class="main-post__views">
+                      <i class="fa-solid fa-eye"></i>
+                      <span class="main-post__number-views">4520</span>
+                    </div>
+                    <div class="main-post__comments">
+                      <i class="fa-solid fa-comment"></i>
+                      <span class="main-post__number-comments">31</span>
+                    </div>
+                  </div>
+                  <div class="main-post__read-more">
+                    <a
+                      href="https://www.desnivel.com/cultura/la-enfermedad-de-lyme-riesgo-y-consejos-para-su-prevencion/"
+                      class="main-post__btn"
+                      target="_blank"
+                      >Leer más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div class="news__list">
+              <article class="news__post">
+                <div class="news__image">
+                  <a href="#" class="news__link-image">
+                    <img
+                      src="./assets/img/noticias.jpg"
+                      alt="foto atardecer"
+                      class="news__img"
+                    />
+                  </a>
+                </div>
+                <div class="news__detail">
+                  <h4 class="news__title-post">
+                    <a
+                      href="https://www.traveler.es/articulos/mapa-mejores-amaneceres-atardeceres-mundo"
+                      target="_blank"
+                      class="news__link-title"
+                      >Los mejores atardeceres del mundo</a
+                    >
+                  </h4>
+                  <div class="news__data">
+                    <a href="#" class="news__author">Traveler</a>
+                    <span class="news__date">Abril 2022</span>
+                  </div>
+                </div>
+              </article>
+              <article class="news__post">
+                <div class="news__image">
+                  <a href="#" class="news__link-image">
+                    <img
+                      src="./assets/img/refugio.jpg"
+                      alt="foto atardecer"
+                      class="news__img"
+                    />
+                  </a>
+                </div>
+                <div class="news__detail">
+                  <h4 class="news__title-post">
+                    <a
+                      href="https://www.huescalamagia.es/blog/los-refugios-de-alta-montana-mas-espectaculares-y-sus-panoramicas-imposibles/"
+                      class="news__link-title"
+                      target="_blank"
+                      >¿Cuáles son los refugios más bonitos que conoces?
+                    </a>
+                  </h4>
+                  <div class="news__data">
+                    <a href="#" class="news__author">Huesca La Magia</a>
+                    <span class="news__date">Diciembre 2022</span>
+                  </div>
+                </div>
+              </article>
+              <article class="news__post">
+                <div class="news__image">
+                  <a href="#" class="news__link-image">
+                    <img
+                      src="./assets/img/17.jpg"
+                      alt="foto atardecer"
+                      class="news__img"
+                    />
+                  </a>
+                </div>
+                <div class="news__detail">
+                  <h4 class="news__title-post">
+                    <a href="#" class="news__link-title"
+                      >Escaladas increíbles
+                    </a>
+                  </h4>
+                  <div class="news__data">
+                    <a
+                      href="https://www.redbull.com/es-es/10-escaladas-libres-epicas-en-solitario"
+                      target=""
+                      class="news__author"
+                      >Andrés</a
+                    >
+                    <span class="news__date">Marzo 2023</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="news__post">
+                <div class="news__image">
+                  <a
+                    href="https://rumbonaturaleza.com/blog/montanismo/montanistas/"
+                    class="news__link-image"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/img/grandes.jpeg"
+                      alt="foto atardecer"
+                      class="news__img"
+                    />
+                  </a>
+                </div>
+                <div class="news__detail">
+                  <h4 class="news__title-post">
+                    <a
+                      href="https://rumbonaturaleza.com/blog/montanismo/montanistas/"
+                      target="_blank"
+                      class="news__link-title"
+                      >Grandes personajes en la historia del alpinismo
+                    </a>
+                  </h4>
+                  <div class="news__data">
+                    <a href="#" class="news__author">Rumbo Naturaleza</a>
+                    <span class="news__date">Enero 2023</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!--Literatura-->
+        <section class="main__books">
+          <header class="books__subheader">
+            <h3 class="subheader__title">Literatura</h3>
+          </header>
+          <div class="books__container">
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.desnivel.com/librosdesnivel/la-montana-desnuda/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/desnuda.jpg"
+                    alt="la montaña desnuda"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.libreriadesnivel.com/libros/k2-el-nudo-infinito/9788498292596/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/k2.jpg"
+                    alt="la montaña desnuda"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.libreriadesnivel.com/libros/escaladores-de-la-libertad/9788498293142/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/libertad.jpg"
+                    alt="la montaña desnuda"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.desnivel.com/librosdesnivel/kurtyka-arte-la-libertad/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/kurtika.jpg"
+                    alt="la montaña desnuda"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.libreriadesnivel.com/libros/prisionero-del-annapurna/9788496192669/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/annapurna.jpg"
+                    alt="la montaña desnuda"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://capitanswing.com/libros/endurance-la-prision-blanca/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/endurance.jpg"
+                    alt="la montaña desnuda"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://edicionesdesnivel.com/libros/ascensiones/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/ascensiones.jpg"
+                    alt="ascensiones"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.libreriadesnivel.com/libros/cita-con-la-cumbre/9788498292084/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/citaconlacumbre.jpg"
+                    alt="cita con la cumbre"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.amazon.es/peor-viaje-del-mundo-expedici%C3%B3n/dp/8498720826"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/peorviajedelmundo.jpg"
+                    alt="el peor viaje del mundo"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.libreriadesnivel.com/libros/mi-mundo-vertical/9788498294064/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/mimundovertical.jpg"
+                    alt="mi mundo mi-mundo-vertical"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.libreriadesnivel.com/libros/el-sentimiento-de-la-montana/9788498293180/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/sentimientoMontaña.jpg"
+                    alt="el sentimiento de la montaña"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+
+            <article class="books__book">
+              <div class="book__container-image">
+                <a
+                  href="https://www.libreriadesnivel.com/libros/everest-1996/9788498293210/"
+                  class="book__link-image"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/everest1996.jpg"
+                    alt="everest 1996"
+                    class="book__img"
+                  />
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <!--Barra lateral-->
+      <aside class="layout__aside">
+        <section class="aside__login">
+          <header class="login__subheader">
+            <h3 class="subheader__title">Iniciar sesión</h3>
+          </header>
+          <div class="login__container">
+            <form class="login__form">
+              <div class="form__container-username">
+                <label for="username" class="form__label">Usuario</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form__input"
+                />
+              </div>
+              <div class="form__container-password">
+                <label for="password" class="form__label">Contraseña</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form__input"
+                />
+              </div>
+              <div class="form__container-remember">
+                <input
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                  class="form__input"
+                />
+                <label for="remember" class="form__label">Recuérdame</label>
+              </div>
+              <input
+                type="submit"
+                class="form__submit"
+                value="Iniciar sesión"
+              />
+            </form>
+            <a href="#" class="login__register">Regístrate</a>
+            <a href="#" class="login__lost-pass">Recuperar contraseña</a>
+          </div>
+        </section>
+
+        <section class="aside__social">
+          <ul class="social__list">
+            <li class="social__item social__item--blue">
+              <a href="#" class="social__link">
+                <div class="social__icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="social__followers">
+                  <h4 class="social__number">10000</h4>
+                  <span class="social__word">Seguidores</span>
+                </div>
+              </a>
+            </li>
+            <li class="social__item social__item--dark">
+              <a href="#" class="social__link">
+                <div class="social__icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="social__followers">
+                  <h4 class="social__number">1200</h4>
+                  <span class="social__word">Seguidores</span>
+                </div>
+              </a>
+            </li>
+            <li class="social__item social__item--red">
+              <a href="#" class="social__link">
+                <div class="social__icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="social__followers">
+                  <h4 class="social__number">165000</h4>
+                  <span class="social__word">Seguidores</span>
+                </div>
+              </a>
+            </li>
+            <li class="social__item social__item--pink">
+              <a href="#" class="social__link">
+                <div class="social__icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="social__followers">
+                  <h4 class="social__number">17000</h4>
+                  <span class="social__word">Seguidores</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="aside__recent">
+          <header class="recent__subheader">
+            <ul class="recent__list-header">
+              <li class="list-header__item list-header__item--active">
+                <h3 class="list-header__title">
+                  <a href="#" class="list-header__link-title">Reciente</a>
+                </h3>
+              </li>
+              <li class="list-header__item">
+                <h3 class="list-header__title">
+                  <a href="#" class="list-header__link-title">Popular</a>
+                </h3>
+              </li>
+              <li class="list-header__item">
+                <h3 class="list-header__title">
+                  <a href="#" class="list-header__link-title">Comentarios</a>
+                </h3>
+              </li>
+            </ul>
+          </header>
+          <div class="recent__container">
+            <ul class="recent__list-posts">
+              <li class="recent__item">
+                <div class="recent__container-img">
+                  <a href="#" class="recent__link-img">
+                    <img
+                      src="./assets/img/mejorActividad.jpg"
+                      alt="foto mejores actividades"
+                      class="recent__img"
+                    />
+                  </a>
+                </div>
+                <div class="recent__detail">
+                  <h4 class="recent__title">
+                    <a
+                      href="https://fedme.es/premios-fedme-a-las-mejores-actividades-alpinisticas-y-de-escalada-2023/"
+                      class="recent__link-title"
+                      target="_blank"
+                      >Mejores actividades del año 2023</a
+                    >
+                  </h4>
+                  <div class="recent__container-info">
+                    <a
+                      href="https://fedme.es/"
+                      class="recent__author"
+                      target="_blank"
+                      >FEDME</a
+                    >
+                    <div class="recent__meta-info">
+                      <div class="recent__views">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="recent__number-views">5260</span>
+                      </div>
+                      <div class="recent__comments">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="recent__number-views">22</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recent__item">
+                <div class="recent__container-img">
+                  <a href="#" class="recent__link-img">
+                    <img
+                      src="./assets/img/aludes-peligros.jpg"
+                      alt="foto mejores actividades"
+                      class="recent__img"
+                    />
+                  </a>
+                </div>
+                <div class="recent__detail">
+                  <h4 class="recent__title">
+                    <a
+                      href="https://www.desnivel.com/esqui/aludes-de-nieve-y-las-causas-de-mortalidad-asociadas/"
+                      class="recent__link-title"
+                      target="_blank"
+                      >Aludes de nieve y las causas de mortalidad asociadas</a
+                    >
+                  </h4>
+                  <div class="recent__container-info">
+                    <a
+                      href="https://www.desnivel.com/"
+                      class="recent__author"
+                      target="_blank"
+                      >Desnivel</a
+                    >
+                    <div class="recent__meta-info">
+                      <div class="recent__views">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="recent__number-views">1285</span>
+                      </div>
+                      <div class="recent__comments">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="recent__number-views">13</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recent__item">
+                <div class="recent__container-img">
+                  <a href="#" class="recent__link-img">
+                    <img
+                      src="./assets/img/mejoresfotos.jpg"
+                      alt="foto mejores actividades"
+                      class="recent__img"
+                    />
+                  </a>
+                </div>
+                <div class="recent__detail">
+                  <h4 class="recent__title">
+                    <a
+                      href="https://www.focusnordic.com/inspiration/photography/8-best-tips-for-mountain-photography/"
+                      class="recent__link-title"
+                      target="_blank"
+                      >8 best tips for mountain photography</a
+                    >
+                  </h4>
+                  <div class="recent__container-info">
+                    <a
+                      href="https://www.focusnordic.com/"
+                      class="recent__author"
+                      target="_blank"
+                      >focus Nordic</a
+                    >
+                    <div class="recent__meta-info">
+                      <div class="recent__views">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="recent__number-views">2586</span>
+                      </div>
+                      <div class="recent__comments">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="recent__number-views">8</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recent__item">
+                <div class="recent__container-img">
+                  <a href="#" class="recent__link-img">
+                    <img
+                      src="./assets/img/trek.jpg"
+                      alt="foto mejores actividades"
+                      class="recent__img"
+                    />
+                  </a>
+                </div>
+                <div class="recent__detail">
+                  <h4 class="recent__title">
+                    <a
+                      href="https://www.manasluadventures.com/top-10-mejores-trekkings-del-mundo/"
+                      class="recent__link-title"
+                      target="_blank"
+                      >Top 10 mejores trekkings del mundo</a
+                    >
+                  </h4>
+                  <div class="recent__container-info">
+                    <a
+                      href="https://www.manasluadventures.com/"
+                      class="recent__author"
+                      target="_blank"
+                      >Manaslu adventures</a
+                    >
+                    <div class="recent__meta-info">
+                      <div class="recent__views">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="recent__number-views">2586</span>
+                      </div>
+                      <div class="recent__comments">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="recent__number-views">8</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recent__item">
+                <div class="recent__container-img">
+                  <a href="#" class="recent__link-img">
+                    <img
+                      src="./assets/img/gines.jpg"
+                      alt="foto mejores actividades"
+                      class="recent__img"
+                    />
+                  </a>
+                </div>
+                <div class="recent__detail">
+                  <h4 class="recent__title">
+                    <a
+                      href="https://www.desnivel.com/juegos-olimpicos/paris-2024/alberto-gines-se-clasifica-para-paris-2024/"
+                      class="recent__link-title"
+                      target="_blank"
+                      >Alberto Ginés se clasifica para París 2024</a
+                    >
+                  </h4>
+                  <div class="recent__container-info">
+                    <a
+                      href="https://www.desnivel.com/"
+                      class="recent__author"
+                      target="_blank"
+                      >Desnivel</a
+                    >
+                    <div class="recent__meta-info">
+                      <div class="recent__views">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="recent__number-views">2586</span>
+                      </div>
+                      <div class="recent__comments">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="recent__number-views">8</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <!--Footer-->
+    <footer class="layout__footer">
+      <div class="footer__container">
+        <section class="footer__left-container">
+          <div class="left__follow">
+            <h3 class="left__title">Síguenos</h3>
+            <div class="left__RRSS">
+              <ul class="left__list">
+                <li class="left__social-list">
+                  <a href="#" class="social__link">
+                    <div class="social__icon">
+                      <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <span class="left__social-name">Instagram</span>
+                  </a>
+                </li>
+                <li class="left__social-list">
+                  <a href="#" class="social__link">
+                    <div class="social__icon">
+                      <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <span class="left__social-name">Youtube</span>
+                  </a>
+                </li>
+                <li class="left__social-list">
+                  <a href="#" class="social__link">
+                    <div class="social__icon">
+                      <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <span class="left__social-name">Twitter</span>
+                  </a>
+                </li>
+                <li class="left__social-list">
+                  <a href="#" class="social__link">
+                    <div class="social__icon">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <span class="left__social-name">Linkedin</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="footer__center-container">
+          <div class="center__info">
+            <h3 class="center__title">¿Dónde estamos?</h3>
+            <div class="center__map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.699152129462!2d-3.709975823597843!3d40.415515055712746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287ed77a7e65%3A0x49a63c540111181c!2sPlaza%20Mayor!5e0!3m2!1ses!2ses!4v1719645493705!5m2!1ses!2ses"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+              ></iframe>
+            </div>
+            <div class="center__description">
+              <p class="description__text">
+                Trabajamos a lo largo de todo el territorio nacional.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="footer__right-container">
+          <h3 class="center__title">Contacto</h3>
+          <div class="right__container__contact">
+            <div class="social__icon">
+              <i class="fa-brands fa-envelope"></i>
+            </div>
+            <span class="left__social-name">Email: info@info.com</span>
+          </div>
+
+          <div class="right__final">
+            <p class="final__text">No dejes de soñar con montañas</p>
+            <div class="final__video">
+              <iframe
+                src="https://www.youtube.com/embed/ViSXePkt7t8?si=YMQcCbmKCGmmW4z0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="footer__bottom">
+        <div class="footer__text">
+          &copy; Copyright 2024. Todos los derechos reservados. Andrés Martín
+        </div>
+      </section>
+    </footer>
+
+    <!--Carga de scripts js-->
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/marquee.js"></script>
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>

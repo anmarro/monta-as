@@ -1,0 +1,392 @@
+/*Menú móvil*/
+.navbar__mobile-btn {
+  /*este y el siguinete estarán ocultos y se mostrará en el menú responsive*/
+  display: none;
+}
+.navbar__mobile-list {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar__list {
+    display: none; /*muestras el menu responsive, que es el anterior, con display flex, y el menú normal, que es este, lo ocultas*/
+  }
+
+  /*Menú móvil*/
+  .navbar__mobile-btn {
+    display: flex;
+    background-color: var(--color-principal);
+    padding: 0.8rem 1.3rem;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    height: 100%;
+  }
+  .navbar__mobile-list {
+    display: none;
+    position: absolute;
+    padding: 1.5rem;
+    top: 98%;
+    width: 100%;
+    background-color: #323232;
+    z-index: 99;
+  }
+  .mobile-list__item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #777777;
+  }
+  .mobile-list__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-list__link {
+    display: block;
+    width: 85%;
+    font-weight: 400;
+    line-height: 3rem;
+    font-size: 1.3rem;
+  }
+  .mobile-list__icon {
+    cursor: pointer;
+  }
+  .mobile-list__icon .fa-solid {
+    font-size: 1.6rem;
+  }
+  /*Submenu movil*/
+  .mobile-list__m-submenu {
+    display: none;
+  }
+  .m-submenu__item {
+    padding-left: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .m-submenu__link {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+
+  /*marquesina*/
+  .marquee__header {
+    width: 15rem;
+    font-size: 1.3rem;
+  }
+  .marquee__link {
+    font-size: 1.2rem;
+  }
+  .layout__marquee {
+    margin-top: 0.5rem;
+  }
+
+  /*Estilos al layout completo*/
+  .layout {
+    width: 70%; /*para que sea un poco más estrecha y se adapte bien */
+    min-width: 74rem;
+    margin: 0 auto;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "marquee marquee"
+      "slider slider"
+      "highlights highlights"
+      "videos videos"
+      "mountain mountain"
+      "main main"
+      "aside aside";
+  }
+
+  /*cabecera*/
+  .layout__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header__img {
+    width: 50rem;
+  }
+}
+
+/*Slider*/
+
+.slider__text {
+  font-size: 1.3rem;
+}
+
+/*películas*/
+.highlights__img {
+  height: 30rem;
+}
+.highlights__link,
+.main-video__title,
+.main-post__link-title,
+.left__title,
+.center__title {
+  font-size: 1.5rem;
+}
+.highlights__author,
+.main-video__author,
+.video__author,
+.main-post__container-autor,
+.news__author,
+.recent__author {
+  font-size: 1.3rem;
+}
+.highlights__date,
+.video__date,
+.main-post__date,
+.news__date {
+  font-size: 1.3rem;
+}
+.highlights__description,
+.main-post__description {
+  font-size: 1.4rem;
+}
+.highlights__footer-post {
+  display: flex;
+  flex-direction: column;
+}
+.footer-post__container {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer-post__views,
+.footer-post__comments,
+.main-video__views,
+.main-video__comments,
+.main-video__date,
+.main-post__number-views,
+.main-post__comments,
+.recent__views,
+.recent__comments,
+.left__social-name,
+.final__text,
+.footer__text,
+.login__register,
+.login__lost-pass,
+.social__number,
+.social__word {
+  font-size: 1.3rem;
+}
+.read-more__btn,
+.main-post__read-more {
+  width: 8rem;
+  font-size: 1.3rem;
+}
+
+/*Videos*/
+.videos__container {
+  display: flex;
+  flex-direction: column;
+}
+.video__image-link {
+  width: 35rem;
+}
+/*Montañas*/
+.card__title {
+  font-size: 1.5rem;
+}
+/*Noticias*/
+.recent__item {
+  margin-bottom: 2rem;
+}
+.recent__detail {
+  width: 100%;
+}
+
+/*Aside*/
+.social__icon > .fa-brands {
+  font-size: 3rem;
+}
+.social__item {
+  height: 6rem;
+}
+
+/*Footer*/
+
+.footer__container {
+  padding: 2rem 2rem;
+}
+.footer__left-container,
+.footer__center-container,
+.footer__right-container {
+  width: 100%;
+}
+.left__social-list {
+  font-size: 1.3rem;
+  margin-left: 4rem;
+}
+.description__text {
+  animation: none;
+  font-size: 1.2rem;
+  text-align: center;
+  color: aqua;
+}
+.footer__container {
+  gap: 4rem;
+}
+.footer__right-container {
+  margin-right: 4rem;
+}
+
+@media (max-width: 775px) {
+  /*Layout*/
+  .layout {
+    width: 57%; /*para que sea un poco más estrecha y se adapte bien */
+    min-width: 57rem;
+    margin: 0 auto;
+  }
+
+  /*Películas*/
+  .highlights__img {
+    height: 25rem;
+  }
+  /*Libros*/
+  .books__book {
+    margin: 0 auto;
+    flex-basis: 25%;
+  }
+  /*Noticias*/
+  .books__book {
+    display: flex;
+    flex-direction: column;
+  }
+  .news__post {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 595px) {
+  .layout {
+    width: 35%; /*para que sea un poco más estrecha y se adapte bien */
+    min-width: 35rem;
+    margin: 0 auto;
+  }
+  .footer-post__views,
+  .footer-post__comments,
+  .main-video__views,
+  .main-video__comments,
+  .main-video__date,
+  .main-post__number-views,
+  .main-post__comments,
+  .recent__views,
+  .recent__comments,
+  .left__social-name,
+  .final__text,
+  .footer__text,
+  .login__register,
+  .login__lost-pass,
+  .social__number,
+  .social__word {
+    font-size: 1rem;
+  }
+  .highlights__description,
+  .main-post__description {
+    font-size: 1.1rem;
+  }
+  .read-more__btn,
+  .main-post__read-more {
+    width: 7rem;
+    font-size: 1.1rem;
+  }
+
+  /*Slider*/
+  .slider__text {
+    font-size: 0.8rem;
+  }
+  .slider__info {
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    top: 0rem;
+  }
+
+  /*Películas*/
+  .highlights__img {
+    height: 15rem;
+  }
+
+  /*Videos*/
+  .videos__video {
+    flex-direction: column;
+  }
+  .video__image {
+    width: 100%;
+    height: auto;
+  }
+  .video__link {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+
+  /*Noticias*/
+  .news__main-post,
+  .news__post {
+    display: flex;
+    flex-direction: column;
+  }
+  .news__img {
+    width: 100%;
+  }
+
+  /*Libros*/
+  .books__container {
+    gap: 0rem;
+  }
+
+  /*Footer*/
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .right__container__contact {
+    margin-left: 17rem;
+  }
+  .left__list {
+    margin-left: 17rem;
+  }
+
+  .final__video {
+    margin-left: 10rem;
+  }
+
+  .final__text {
+    font-size: 0rem;
+  }
+}
+
+@media (max-width: 355px) {
+  .layout {
+    width: 100%;
+    min-width: auto;
+    margin: 0;
+  }
+
+  .marquee__header{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .footer__container {
+    width: 100%;
+    min-width: auto;
+    margin: 0;
+  }
+
+  .left__list{
+  margin-left: 6rem;
+  }
+  .final__video{
+    margin-left: 1rem;
+  }
+  .right__container__contact{
+    margin-left: 7rem;
+  }
+}
